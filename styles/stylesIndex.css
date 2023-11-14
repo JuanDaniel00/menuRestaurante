@@ -1,3 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+/* - - - ESTILOS HEADER - - - */
+
+.navMenuHorizontal{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23bdcb;
+}
+
+.navLinks{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contImgcabecera{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logocabecera{
+    width: 14vh;
+    height: auto;
+}
+
+.logocabecera img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.contItemsMenu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.contRedesMenu{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+.navImgLogo, .navIcon{
+    display: none;
+    pointer-events: none;
+}
+
 
 /* - - - ESTILOS BARRA ESPACIO - - - */
 
