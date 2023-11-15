@@ -13,101 +13,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
-<header class="header">
-    <nav class="navMenuHorizontal container">
-
-        <div class="navImgLogo">
-            <img src="./img/logoDisp.png" alt="">
-        </div>
-
-        <ul class="navLinks" id="menu">
-
-            <div class="contImgcabecera">
-                <!-- img en css -->
-                <div class="logocabecera">
-                    <img src="./img/logo.jpg" alt="">
-                </div>
-            </div>
-
-
-                <div class="contItemsMenu">
-                    <li class="itemMenu">Llamanos 📞</li>
-                    <li class="itemMenu">Escribenos <i class="fab fa-whatsapp"></i> </li>
-                    <li class="itemMenu">Horarios 🕒</li>
-                    <li class="itemMenu">Como llegar 📍</li>
-                    <li class="itemMenu">Envia menu a un amigo 💌</li>
-                    <li class="itemMenu">Medios de pago 💳</li>
-                </div>
-
-                <div class="contRedesMenu">
-                    <li class="itemMenuRedes"><i class="fab fa-facebook"></i></li>
-                    <li class="itemMenuRedes"><i class="fab fa-instagram"></i></li>
-                    <li class="itemMenuRedes"><i class="fab fa-whatsapp"></i></li>
-                </div>
-        </ul>
-
-        <a href="#menu" class="navIcon navIconHamburguer">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-
-        <a href="#" class="navIcon navIconClose">
-            <i class="fa-solid fa-times"></i>
-        </a>
-    </nav>
-
-</header>
 
 <body>
 
-    <section class="sectionMenuLateral">
-        <nav>
-            <ul>
-                <div class="menu-item menuBtn">
-                    <li><i class="fa-solid fa-angle-right"></i></li>
+    <header class="header">
+        <nav class="navMenuHorizontal container">
+            <div class="navImgLogo">
+                <img src="./img/logoDisp.png" alt="">
+            </div>
+            <ul class="navLinks" id="menu">
+                <div class="contImgcabecera">
+                    <!-- img en css -->
+                    <div class="logocabecera">
+                        <img src="./img/logo1.png" alt="">
+                    </div>
                 </div>
-                <div class="menu-item menuCompleto">
-                    <li>Menu Completo <i class="fa-regular fa-notebook"></i></li>
+                <div class="contRedesMenu">
+                    <li class="itemMenuRedes"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="itemMenuRedes"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="itemMenuRedes"><a href=""><i class="fab fa-whatsapp"></i></a></li>
                 </div>
-                <div class="menu-item menuHamburguesas">
-                    <li>Hamburguesas <i class="fa-solid fa-burger-lettuce"></i></li>
-                </div>
-                <div class="menu-item menuPerrotes">
-                    <li>Perrotes <i class="fa-duotone fa-hotdog"></i></li>
-                </div>
-                <div class="menu-item menuBabear">
-                    <li>Para babear <i class="fa-regular fa-face-smile-tongue"></i></li>
-                </div>
-                <div class="menu-item menuPaparrotas">
-                    <li>Paparrotas <i class="fa-sharp fa-solid fa-french-fries"></i></li>
-                </div>
-                <div class="menu-item menuSandwich">
-                    <li>Sandwich <i class="fa-solid fa-sandwich"></i></li>
-                </div>
-                <div class="menu-item menuChikenWings">
-                    <li>Chiken Wings <i class="fa-solid fa-drumstick-bite"></i></li>
-                </div>
-                <div class="menu-item menuParrila">
-                    <li>Parrilla <i class="fa-regular fa-fire"></i></li>
-                </div>
-                <div class="menu-item menuBradsitos">
-                    <li>Bradsitos <i class="fa-solid fa-baby"></i></li>
-                </div>
-                <div class="menu-item menuBebidas">
-                    <li>Bebidas <i class="fa-solid fa-cup-straw-swoosh"></i></li>
-                </div>
-                <div class="menu-item menuAdicionales">
-                    <li>Adicionales <i class="fa-regular fa-circle-plus"></i></li>
-                </div>
-                <div class="menu-item menuCelebraBrad">
-                    <li>Celebra Con Brad <i class="fa-regular fa-party-horn"></i></li>
+                <div class="contItemsMenu">
+                    <li class="itemMenu"><a href="#">Llamanos 📞</a></li>
+                    <li class="itemMenu"><a href="#">Escribenos <i class="fab fa-whatsapp"></i></a></li>
+                    <li class="itemMenu"><a href="#">Horarios 🕒</a></li>
+                    <li class="itemMenu"><a href="#">Como llegar 📍</a></li>
+                    <li class="itemMenu"><a href="#">Comparte menu 💌</a></li>
+                    <li class="itemMenu ultItemMenu"><a href="#">Pagos 💳</a></li>
                 </div>
             </ul>
+            <a href="#menu" class="navIcon navIconHamburguer">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="#" class="navIcon navIconClose">
+                <i class="fa-solid fa-times"></i>
+            </a>
+        </nav>
+    
+    </header>    
+
+
+    
+    <section class="sectionMenuLateral">
+        
+        <input type="checkbox" id="menuToggle">
+        <nav class="contMenuLateral">
+            <label for="menuToggle" class="menuBtn">
+                <span class="titleBrad">Brad´s</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+            <div class="contItems">
+                <ul>
+                    <div class="menu-item menuCompleto">
+                        <li><a href="#"><span>Menu Completo </span><i class="fa-regular fa-notebook"></i></a></li>
+                    </div>
+                    <div class="menu-item menuHamburguesas">
+                        <li><a href="#"><span>Hamburguesas </span><i class="fa-solid fa-burger-lettuce"></i></a></li>
+                    </div>
+                    <div class="menu-item menuPerrotes">
+                        <li><a href="#"><span>Perrotes </span><i class="fa-duotone fa-hotdog"></i></a></li>
+                    </div>
+                    <div class="menu-item menuBabear">
+                        <li><a href="#"><span>Para babear </span><i class="fa-regular fa-face-smile-tongue"></i></a></li>
+                    </div>
+                    <div class="menu-item menuPaparrotas">
+                        <li><a href="#"><span>Paparrotas </span><i class="fa-sharp fa-solid fa-french-fries"></i></a></li>
+                    </div>
+                    <div class="menu-item menuSandwich">
+                        <li><a href="#"><span>Sandwich </span><i class="fa-solid fa-sandwich"></i></a></li>
+                    </div>
+                    <div class="menu-item menuChikenWings">
+                        <li><a href="#"><span>Chiken Wings</span><i class="fa-solid fa-drumstick-bite"></i></a></li>
+                    </div>
+                    <div class="menu-item menuParrila">
+                        <li><a href="#"><span>Parrilla </span><i class="fa-regular fa-fire"></i></a></li>
+                    </div>
+                    <div class="menu-item menuBradsitos">
+                        <li><a href="#"><span>Bradsitos </span><i class="fa-solid fa-baby"></i></a></li>
+                    </div>
+                    <div class="menu-item menuBebidas">
+                        <li><a href="#"><span>Bebidas </span><i class="fa-solid fa-cup-straw-swoosh"></i></a></li>
+                    </div>
+                    <div class="menu-item menuAdicionales">
+                        <li><a href="#"><span>Adicionales </span><i class="fa-regular fa-circle-plus"></i></a></li>
+                    </div>
+                    <div class="menu-item menuCelebraBrad">
+                        <li><a href="#"><span>Celebra Con Brad´s </span><i class="fa-regular fa-party-horn"></i></a></li>
+                    </div>
+
+                </ul>
+            </div>
         </nav>
     </section>
 
     <main>
         <section class="sectionMenuCompleto">
-            <section class="sectionHamburguesas sectionCategoria">
+            <section class="sectionHamburguesas sectionCategoria" id="hamburguesas">
                 <div class="contImg_Estructura2 hamburguesas">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -166,7 +167,7 @@
             </section>
             </div>
 
-            <section class="sectionPerrotes sectionCategoria">
+            <section class="sectionPerrotes sectionCategoria" id="perrotes">
                 <div class="contImg_Estructura2 perrotes">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -225,7 +226,7 @@
                 </div>
             </section>
 
-            <section class="sectionParaBabear sectionCategoria">
+            <section class="sectionParaBabear sectionCategoria" id="babear">
                 <div class="contImg_Estructura2 paraBabear">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -268,7 +269,7 @@
                 </div>
             </section>
 
-            <section class="sectionPaparrotas sectionCategoria">
+            <section class="sectionPaparrotas sectionCategoria" id="paparrotas">
                 <div class="contImg_Estructura2 paparrotas">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -308,7 +309,7 @@
                 </div>
             </section>
 
-            <section class="sectionSandwich sectionCategoria">
+            <section class="sectionSandwich sectionCategoria" id="sandwich">
                 <div class="contImg_Estructura2 sandwich">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -348,7 +349,7 @@
                 </div>
             </section>
 
-            <section class="sectionChikenWings sectionCategoria">
+            <section class="sectionChikenWings sectionCategoria" id="chikenWings">
                 <div class="contImg_Estructura2 chikenWings">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -388,7 +389,7 @@
                 </div>
             </section>
 
-            <section class="sectionParrilla sectionCategoria">
+            <section class="sectionParrilla sectionCategoria" id="parrilla">
                 <div class="contImg_Estructura2 parrilla">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -431,7 +432,7 @@
                 </div>
             </section>
 
-            <section class="sectionBradsitos sectionCategoria">
+            <section class="sectionBradsitos sectionCategoria" id="bradsitos">
                 <div class="contImg_Estructura2 bradsitos">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -471,7 +472,7 @@
                 </div>
             </section>
 
-            <section class="sectionBebidas sectionCategoria">
+            <section class="sectionBebidas sectionCategoria" id="bebidas">
                 <div class="contImg_Estructura2 bebidas">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -507,7 +508,7 @@
                 </div>
             </section>
 
-            <section class="sectionAdicionales sectionCategoria">
+            <section class="sectionAdicionales sectionCategoria" id="adicionales">
                 <div class="contImg_Estructura2 adicionales">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
@@ -538,7 +539,7 @@
                 </div>
             </section>
 
-            <section class="sectionCelebraBrad sectionCategoria">
+            <section class="sectionCelebraBrad sectionCategoria" id="celebra">
                 <div class="contImg_Estructura2 celebraConBrad">
                     <img src="x" alt="">
                     <div class="nombreArticulo_Estructura2">
