@@ -15,6 +15,9 @@
     width: 0; /* Ancho del scrollbar */
 }
 
+main{
+    margin: 80px 50px 80px 100px;
+}
 
 body{
     width: 100%;
@@ -22,9 +25,6 @@ body{
     background-color: #f5f5f5;
 }
 
-main{
-    margin-left: 80px;
-}
 
 
 /* - - - ESTILOS HEADER - - - */
@@ -32,6 +32,7 @@ main{
 header{
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navMenuHorizontal{
@@ -130,7 +131,7 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #0b0e15;
-    z-index: 5;
+    z-index: 90;
     transition: width 0.5s; 
 }
 
@@ -221,6 +222,89 @@ header{
 }
 
 /* - - - ESTILOS PARA CATEGORIAS - - - */
+
+.sectionMenuCompleto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionHamburguesas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contImg_Estructura2{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    border-radius: 0 1em 0 1em;
+    overflow: hidden;
+    margin-bottom: 5vw;
+}
+
+.hamburguesasImg{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+}
+.nombreArticulo_Estructura2{
+    background-color: #ba2c3f5a;
+    border-radius: 0 0em 0 1em;
+    color: #f5f5f5;
+    font-weight: bold;
+    width: 100%;
+    padding: 0 1em;
+}
+
+.articulosHamburguesas{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.articuloMenu_Estructura1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform .8s;
+    z-index: 10;
+}
+
+.articuloMenu_Estructura1:hover{
+    transform: scale(1.05);
+}
+
+.contImgTextMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contImgTextMenu img{
+    width: 100%;
+    height: auto;
+    border-radius: 1em 1em 0 0;
+    object-fit:cover;
+}
 
 
 
