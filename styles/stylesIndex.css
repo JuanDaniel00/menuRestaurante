@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -12,47 +12,60 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0; /* Ancho del scrollbar */
+    width: 0;
+    /* Ancho del scrollbar */
 }
 
-main{
+main {
     margin: 80px 50px 80px 100px;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: #f5f5f5;
 }
 
+.fab.fa-whatsapp {
+    color: #25D366;
+}
 
+.fab.fa-instagram {
+    color: #E4405F;
+    /* Color rosa de Instagram */
+}
+
+.fab.fa-facebook {
+    color: #1877F2;
+    /* Color azul de Facebook */
+}
 
 /* - - - ESTILOS HEADER - - - */
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.navMenuHorizontal{
+.navMenuHorizontal {
     width: 100%;
     height: 15vh;
     display: flex;
     align-items: center;
     background-color: #0b0e15;
     color: #f5f5f5;
-    font-size:medium;
+    font-size: medium;
 }
 
-.navLinks{
+.navLinks {
     width: 100%;
     height: 15vh;
     display: flex;
     align-items: center;
 }
 
-.contImgcabecera{
+.contImgcabecera {
     width: 13vh;
     display: flex;
     align-items: center;
@@ -60,18 +73,18 @@ header{
     padding: 0 1em;
 }
 
-.logocabecera{
+.logocabecera {
     width: 12vh;
     height: auto;
 }
 
-.logocabecera img{
+.logocabecera img {
     width: 12vh;
     height: auto;
     display: block;
 }
 
-.contRedesMenu{
+.contRedesMenu {
     width: 2%;
     display: flex;
     flex-direction: column;
@@ -80,11 +93,11 @@ header{
     font-size: large;
 }
 
-.contRedesMenu a{
+.contRedesMenu a {
     color: #f5f5f5;
 }
 
-.contItemsMenu{
+.contItemsMenu {
     width: 100%;
     display: flex;
     align-items: center;
@@ -94,25 +107,29 @@ header{
     border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.contItemsMenu a{
+.contItemsMenu a {
     color: #f5f5f5;
 }
 
-.itemMenu{
+.itemMenu {
     padding: 0 .9em;
     border-right: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.ultItemMenu{
+.ultItemMenu {
     border: none;
 }
 
-.navImgLogo, .navIcon{
+.navImgLogo,
+.navIcon {
     display: none;
     pointer-events: none;
 }
 
-.sectionPerros, .sectionPapas, .sectionGatos, .sectionOtros{
+.sectionPerros,
+.sectionPapas,
+.sectionGatos,
+.sectionOtros {
     display: none;
 }
 
@@ -132,24 +149,24 @@ header{
     flex-direction: column;
     background-color: #0b0e15;
     z-index: 90;
-    transition: width 0.5s; 
+    transition: width 0.5s;
 }
 
-.contItems{
+.contItems {
     overflow-y: scroll;
     padding: 0 0 8vw 0;
     text-align: end;
 }
 
-.contMenuLateral span{
+.contMenuLateral span {
     display: none;
 }
 
-#menuToggle:checked + .contMenuLateral{
+#menuToggle:checked+.contMenuLateral {
     width: 200px;
 }
 
-#menuToggle:checked + .contMenuLateral span{
+#menuToggle:checked+.contMenuLateral span {
     display: block;
 }
 
@@ -173,12 +190,12 @@ header{
     width: 100%;
 }
 
-#menuToggle:checked + .contMenuLateral .menuBtn{
+#menuToggle:checked+.contMenuLateral .menuBtn {
     display: flex;
     justify-content: space-between;
 }
 
-.titleBrad{
+.titleBrad {
     font-size: 1em;
     font-weight: bold;
 }
@@ -188,34 +205,34 @@ header{
     transition: transform .8s;
 }
 
-#menuToggle:checked + .contMenuLateral .menuBtn i {
+#menuToggle:checked+.contMenuLateral .menuBtn i {
     transform: rotate(180deg);
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
 
-#menuToggle:checked + .contMenuLateral .menu-item {
+#menuToggle:checked+.contMenuLateral .menu-item {
     display: flex;
     justify-content: end;
 }
 
-#menuToggle:checked + .contMenuLateral .menu-item a{
+#menuToggle:checked+.contMenuLateral .menu-item a {
     display: flex;
     align-items: center;
     padding: 5px 0;
 }
 
-#menuToggle:checked + .contMenuLateral .menu-item span{
+#menuToggle:checked+.contMenuLateral .menu-item span {
     margin-right: 10px;
 }
 
 
-.menu-item i{
+.menu-item i {
     background-color: rgba(151, 5, 24, 0.675);
     border-radius: 20%;
     padding: 10px;
@@ -223,7 +240,7 @@ header{
 
 /* - - - ESTILOS PARA CATEGORIAS - - - */
 
-.sectionMenuCompleto{
+.sectionMenuCompleto {
     width: 100%;
     height: 100%;
     display: flex;
@@ -231,7 +248,11 @@ header{
     align-items: center;
 }
 
-.sectionHamburguesas{
+.sectionCategoria{
+    margin-bottom: 5vw;
+}
+/* // HAMBURGUESAS \\ */
+.sectionHamburguesas {
     width: 100%;
     height: 100%;
     display: flex;
@@ -239,42 +260,43 @@ header{
     align-items: center;
 }
 
-.contImg_Estructura2{
+.contImg_Estructura2 {
     width: 100%;
     height: 30vh;
     display: flex;
     align-items: end;
     justify-content: start;
-    border-radius: 0 1em 0 1em;
+    border-radius: 0 2em;
     overflow: hidden;
     margin-bottom: 5vw;
 }
 
-.hamburguesasImg{
+.hamburguesasImg {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     width: 100%;
 }
-.nombreArticulo_Estructura2{
-    background-color: #ba2c3f5a;
-    border-radius: 0 0em 0 1em;
+
+.nombreArticulo_Estructura2 {
+    background-color: #330c115a;
+    border-radius: 0 0 0 2em;
     color: #f5f5f5;
     font-weight: bold;
     width: 100%;
     padding: 0 1em;
 }
 
-.articulosHamburguesas{
+.articulosHamburguesas {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    gap: 1.5em;
     padding: 1em;
 }
 
-.articuloMenu_Estructura1{
+.articuloMenu_Estructura1 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -283,56 +305,230 @@ header{
     border-radius: 1em;
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform .8s;
     z-index: 10;
 }
 
-.articuloMenu_Estructura1:hover{
-    transform: scale(1.05);
-}
-
-.contImgTextMenu{
+.contImgTextMenu {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em 1em 0 0;
 }
 
-.contImgTextMenu img{
+.contImgTextMenu img {
     width: 100%;
     height: auto;
     border-radius: 1em 1em 0 0;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-
-
-/* - - - ESTILOS BARRA ESPACIO - - - */
-
-/* .contPrecioEspacio{
+.nombreArticulo_Estructura1 {
+    position: absolute;
     width: 100%;
-    height: 40vw;
-    display: flex;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1.6em;
+    background-color: #330c1198;
 }
 
-.contEspacio_Estructura2{
-    width: 90%;
-    height: 10vw;
+.contDescArticulo_Estructura1 {
     display: flex;
+    flex-direction: column;
+    padding: 1em;
+    color: #6b3d3b;
 }
 
-.contEspacio_Estructura2 span{
+.infoArticulo_Estructura1 {
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+.acomArticulo {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: .8em;
+}
+
+.categoriaArticulo {
+    margin-bottom: .5em;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.contPrecioWhaArticulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
-    height: 5vw;
-    margin: .5em .3em 0 .3em;
-    border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+    height: 60px;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px #c9c9c9;
 }
 
-.precioArticulo_Estructura2{
-    width: 10%;
-    height: 10vw;
+.precioArticulo {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: #0b0e15;
+}
+
+.divisorWhats {
+    width: 2px;
+    background-color: #fb6262;
+    height: 60%;
+    margin: 0 10px;
+}
+
+.whaArticulo {
+    border-radius: 1em;
+    padding-right: 20px;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-16 12:17:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+
+.jello-horizontal:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.btnWhatsapp {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+    background-color: #efefef;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 1em;
+    font-size: 1em;
+
+}
+
+.btnWhatsapp i {
+    font-size: 1.2em;
+}
+
+.divisorWhats2 {
+    width: 5px;
+    margin: 0 10px;
+    color: #b9b9b9;
+}
+
+/* // Perros \\ */
+.sectionPerrotes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulosPerrotes{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.perrotesImg {
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
