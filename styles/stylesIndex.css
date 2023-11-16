@@ -13,7 +13,6 @@
 
 ::-webkit-scrollbar {
     width: 0;
-    /* Ancho del scrollbar */
 }
 
 main {
@@ -32,30 +31,21 @@ body {
 
 .fab.fa-instagram {
     color: #E4405F;
-    /* Color rosa de Instagram */
 }
 
 .fab.fa-facebook {
     color: #1877F2;
-    /* Color azul de Facebook */
 }
 
 /* - - - ESTILOS HEADER - - - */
 
 header {
     position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.navMenuHorizontal {
     width: 100%;
     height: 15vh;
-    display: flex;
-    align-items: center;
+    top: 0;
+    z-index: 100;
     background-color: #0b0e15;
-    color: #f5f5f5;
-    font-size: medium;
 }
 
 .navLinks {
@@ -126,11 +116,147 @@ header {
     pointer-events: none;
 }
 
-.sectionPerros,
-.sectionPapas,
-.sectionGatos,
-.sectionOtros {
-    display: none;
+@media screen and (max-width: 587px) {
+
+    .navImgLogo,
+    .navIcon {
+    display: block;
+    pointer-events: all;
+    }
+
+    .header{
+        --icon1: scale(1);
+        --icon2: scale(0);
+    }
+
+    .header:has(.navMenuHorizontal:target){
+        --icon1: scale(0);
+        --icon2: scale(1);
+
+        --clip: inset(0 0 0 0);
+
+    }
+
+    .navMenuHorizontal{
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        background-color: #0b0e15;
+        top: 0;
+        right: 0;
+
+        overflow-y: auto;
+
+        clip-path: var(--clip, inset(0 0 0 100%));
+        transition: clip-path 0.5s ease-in-out;
+    }
+
+    .contNavResponsive{
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-areas: "navImgLogo navIcon";
+        justify-content: space-between;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    .navImgLogo{
+        width: 50vw;
+        height: 15vh;
+        background-image: url(./../img/banner.png);
+        background-size: cover;
+        background-position: center;
+        grid-area: navImgLogo;
+    }
+
+    .navIcon{
+        margin-right: 1em;
+        grid-area: navIcon;
+        color: #E4405F;
+        position: relative;
+        z-index: 100;
+        transform: var(--icon1);
+    }
+    .navIconClose{
+        transform : var(--icon2);
+    }
+
+
+    .navLinks{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contImgCabecera{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./../img/bannerHam.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logocabecera{
+        position: absolute;
+        bottom: -25%;
+        background-color: #0b0e15;
+        border-radius: 5em 5em 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22vh;
+        height: 22vh;
+    }
+    
+    .logocabecera img {
+        width: 20vh;
+        height: auto;
+        display: block;
+    }
+
+    .contRedesMenu{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+
+    .itemMenuRedes{
+        padding: 0 1em;
+        font-size: 1.4em;
+    }
+
+    .contItemsMenu{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border: none;
+        margin: 0;
+        border: none;
+    }
+
+    .itemMenu{
+        width: 80%;
+        text-align: center;
+        padding: .5em;
+        border-right: none;
+        border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+    }
+
+    .ultItemMenu{
+        border: none;
+    }
 }
 
 /* - - - ESTILOS MENU LATERAL - - - */
@@ -154,7 +280,7 @@ header {
 
 .contItems {
     overflow-y: scroll;
-    padding: 0 0 8vw 0;
+    padding: 0 0 15vh 0;
     text-align: end;
 }
 
