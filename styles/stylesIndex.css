@@ -159,8 +159,9 @@ header {
         display: grid;
         grid-template-columns: max-content max-content;
         grid-template-areas: "navImgLogo navIcon";
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        background-color: #08080A;
 
         overflow: hidden;
     }
