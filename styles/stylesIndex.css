@@ -137,6 +137,11 @@ header {
 
     }
 
+    .header:has(.navMenuHorizontal:target) .navIcon{
+        background-color: #0b0e15;
+        border-radius: 1em 0 0 1em;
+    }
+
     .navMenuHorizontal{
         position: fixed;
         width: 80%;
@@ -157,9 +162,8 @@ header {
         margin: 0 auto;
     
         display: grid;
-        grid-template-columns: max-content max-content;
+        grid-template-columns: 90% 10%;
         grid-template-areas: "navImgLogo navIcon";
-        justify-content: space-around;
         align-items: center;
         background-color: #08080A;
 
@@ -167,21 +171,35 @@ header {
     }
 
     .navImgLogo{
-        width: 50vw;
+        width: 100%;
         height: 15vh;
-        background-image: url(./../img/banner.png);
-        background-size: cover;
-        background-position: center;
         grid-area: navImgLogo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .navImgLogo img{
+        width: 70%;
+        height: 15vh;
+        display: block;
     }
 
     .navIcon{
-        margin-right: 1em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
         grid-area: navIcon;
         color: #E4405F;
         position: relative;
         z-index: 100;
+
         transform: var(--icon1);
+        transition: transform 0.2s ;
+        padding: 5px;        
     }
     .navIconClose{
         transform : var(--icon2);
@@ -214,12 +232,12 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 22vh;
-        height: 22vh;
+        width: 130px;
+        height: 130px;
     }
     
     .logocabecera img {
-        width: 20vh;
+        width: 115px;
         height: auto;
         display: block;
     }
@@ -418,10 +436,11 @@ header {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5em;
     padding: 1em;
 }
+
 
 .articuloMenu_Estructura1 {
     width: 100%;
@@ -468,6 +487,8 @@ header {
 
 .contDescArticulo_Estructura1 {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     padding: 1em;
     color: #6b3d3b;
@@ -497,6 +518,7 @@ header {
     width: 100%;
     height: 60px;
     margin-bottom: 2em;
+    border-radius: 1em;
     box-shadow: 0 0 10px #c9c9c9;
 }
 
@@ -648,7 +670,7 @@ header {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5em;
     padding: 1em;
 }
