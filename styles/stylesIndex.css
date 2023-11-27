@@ -16,13 +16,16 @@
 }
 
 main {
-    margin: 80px 50px 80px 100px;
+    margin: 7vh 0 7vh 6vh;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background-color: #f5f5f5;
+    background-image: url(./../img/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .fab.fa-whatsapp {
@@ -55,12 +58,12 @@ header {
     align-items: center;
 }
 
-.contImgcabecera {
+.contImgCabecera {
     width: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 .logocabecera {
@@ -116,168 +119,6 @@ header {
     pointer-events: none;
 }
 
-@media screen and (max-width: 587px) {
-
-    .navImgLogo,
-    .navIcon {
-    display: block;
-    pointer-events: all;
-    }
-
-    .header{
-        --icon1: scale(1);
-        --icon2: scale(0);
-    }
-
-    .header:has(.navMenuHorizontal:target){
-        --icon1: scale(0);
-        --icon2: scale(1);
-
-        --clip: inset(0 0 0 0);
-
-    }
-
-    .header:has(.navMenuHorizontal:target) .navIcon{
-        background-color: #0b0e15;
-        border-radius: 1em 0 0 1em;
-    }
-
-    .navMenuHorizontal{
-        position: fixed;
-        width: 80%;
-        height: 100%;
-        background-color: #0b0e15;
-        top: 0;
-        right: 0;
-
-        overflow-y: auto;
-
-        clip-path: var(--clip, inset(0 0 0 100%));
-        transition: clip-path 0.5s ease-in-out;
-    }
-
-    .contNavResponsive{
-        width: 100%;
-        height: 15vh;
-        margin: 0 auto;
-    
-        display: grid;
-        grid-template-columns: 90% 10%;
-        grid-template-areas: "navImgLogo navIcon";
-        align-items: center;
-        background-color: #08080A;
-
-        overflow: hidden;
-    }
-
-    .navImgLogo{
-        width: 100%;
-        height: 15vh;
-        grid-area: navImgLogo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }   
-
-    .navImgLogo img{
-        width: 70%;
-        height: 15vh;
-        display: block;
-    }
-
-    .navIcon{
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-        grid-area: navIcon;
-        color: #E4405F;
-        position: relative;
-        z-index: 100;
-
-        transform: var(--icon1);
-        transition: transform 0.2s ;
-        padding: 5px;        
-    }
-    .navIconClose{
-        transform : var(--icon2);
-    }
-
-
-    .navLinks{
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .contImgCabecera{
-        position: relative;
-        width: 100%;
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(./../img/bannerHam.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .logocabecera{
-        position: absolute;
-        bottom: -25%;
-        background-color: #0b0e15;
-        border-radius: 5em 5em 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 130px;
-        height: 130px;
-    }
-    
-    .logocabecera img {
-        width: 115px;
-        height: auto;
-        display: block;
-    }
-
-    .contRedesMenu{
-        width: 100%;
-        flex-direction: row;
-        margin-top: 2em;
-    }
-
-    .itemMenuRedes{
-        padding: 0 1em;
-        font-size: 1.4em;
-    }
-
-    .contItemsMenu{
-        width: 100%;
-        height: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        border: none;
-        margin: 0;
-        border: none;
-    }
-
-    .itemMenu{
-        width: 80%;
-        text-align: center;
-        padding: .5em;
-        border-right: none;
-        border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
-    }
-
-    .ultItemMenu{
-        border: none;
-    }
-}
-
 /* - - - ESTILOS MENU LATERAL - - - */
 
 #menuToggle {
@@ -285,7 +126,7 @@ header {
 }
 
 .contMenuLateral {
-    width: 50px;
+    width: 6vh;
     height: 100vh;
     position: fixed;
     top: 15vh;
@@ -393,65 +234,58 @@ header {
     align-items: center;
 }
 
-.sectionCategoria{
-    margin-bottom: 5vw;
-}
+
 /* // HAMBURGUESAS \\ */
-.sectionHamburguesas {
+.sectionCategoria {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10vw;
 }
 
 .contImg_Estructura2 {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     align-items: end;
     justify-content: start;
-    border-radius: 0 2em;
     overflow: hidden;
     margin-bottom: 5vw;
 }
 
-.hamburguesasImg {
-    background-image: url(./../img/bannerHam.jpg);
+.hamburguesas{
+    background-image: url(./../img/bannerHam.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
 }
 
 .nombreArticulo_Estructura2 {
-    background-color: #330c115a;
-    border-radius: 0 0 0 2em;
+    background-color: #2e2e2ea9;
     color: #f5f5f5;
     font-weight: bold;
     width: 100%;
     padding: 0 1em;
 }
 
-.articulosHamburguesas {
-    width: 100%;
-    height: 100%;
+.articulosComida {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5em;
-    padding: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+    padding: 3em;
 }
 
 
 .articuloMenu_Estructura1 {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1em;
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 10;
 }
 
 .contImgTextMenu {
@@ -657,27 +491,441 @@ header {
     color: #b9b9b9;
 }
 
+
 /* // Perros \\ */
-.sectionPerrotes {
+
+.perrotes{
+    background-image: url(./../img/hotdogBanner.png);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.articulosPerrotes{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5em;
-    padding: 1em;
-}
+/*  // Para babear \\ */
 
-.perrotesImg {
+.paraBabear{
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
+}
+
+/* // Paparrotas \\ */
+
+.paparrotas{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/*  //Sandwich\\ */
+
+.sandwich{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* // ChikenWings \\ */
+
+.chikenWings{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* // Parrilla \\ */
+
+.parrilla{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/*  // Bradcitos \\ */
+
+.bradcitos{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* // Bebidas \\ */
+
+.bebidas{
+    background-image: url(./../img/bebida.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.descArt2{
+    padding: 0 1em;
+    font-size: 1em;
+    color: #b9b9b9;
+    margin-bottom: 1em;
+}
+
+/* // Adicionales \\ */
+
+.adicionales{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.articulosComidaSimple{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 3em;
+    padding: 3em 0;
+    background-color: #0b0e15;
+    border-radius: 1em;
+    color: #e2e2e2c5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* // Celebra Con Brad \\ */
+
+
+.celebraConBrad{
+    background-image: url(./../img/bannerHam.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.contCelebraBrad{
+    background-color: #0b0e15cf;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    margin: 0 3em;
+    gap:1em;
+    border-radius: 1em;
+
+}
+
+.contImgCelebraBrad{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.contImgCelebraBrad img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.tituloCelebraBrad{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    color: #b9b9b9;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+.infoCelebraBrad{
+    font-size: .7em;
+    color: #b9b9b9;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+
+.categoriaArticulo{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #b9b9b9;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+
+.btnWhatsappCelebra{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+.contPrecioWhaArticuloCelebra{
+    background-color: #b9b9b9;
+    box-shadow: 0 0 10px #0f131d;
+}
+
+/* - - - - - - FOOTER - - - - - - */
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #0b0e15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contFooter{
+    width: 80%;
+    margin-left: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoFooter{
+    width: 20vh;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoFooter img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.textoFooter{
+    width: 70%;
+    height: 100%;
+    display: block;
+    align-items: space-between;
+    color: #E4405F;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-align: end;
+}
+
+.infoFooter{
+    color: #b9b9b9;
+}
+.textoFooter p{
+    margin-bottom: 1em;
+}
+
+
+/* - - - REPONSIVE - - - */
+
+@media screen and (max-width: 587px) {
+
+    .navImgLogo,
+    .navIcon {
+    display: block;
+    pointer-events: all;
+    }
+
+    .header{
+        --icon1: scale(1);
+        --icon2: scale(0);
+    }
+
+    .header:has(.navMenuHorizontal:target){
+        --icon1: scale(0);
+        --icon2: scale(1);
+
+        --clip: inset(0 0 0 0);
+
+    }
+
+    .header:has(.navMenuHorizontal:target) .navIcon{
+        background-color: #0b0e15;
+        border-radius: 1em 0 0 1em;
+    }
+
+    .navMenuHorizontal{
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        background-color: #0b0e15;
+        top: 0;
+        right: 0;
+
+        overflow-y: auto;
+
+        clip-path: var(--clip, inset(0 0 0 100%));
+        transition: clip-path 0.5s ease-in-out;
+    }
+
+    .contNavResponsive{
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: 90% 10%;
+        grid-template-areas: "navImgLogo navIcon";
+        align-items: center;
+        background-color: #08080A;
+
+        overflow: hidden;
+    }
+
+    .navImgLogo{
+        width: 100%;
+        height: 15vh;
+        grid-area: navImgLogo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .navImgLogo img{
+        width: 70%;
+        height: 15vh;
+        display: block;
+    }
+
+    .navIcon{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        grid-area: navIcon;
+        color: #E4405F;
+        position: relative;
+        z-index: 100;
+
+        transform: var(--icon1);
+        transition: transform 0.2s ;
+        padding: 5px;        
+    }
+    .navIconClose{
+        transform : var(--icon2);
+    }
+
+
+    .navLinks{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contImgCabecera{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./../img/bannerHam.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logocabecera{
+        position: absolute;
+        bottom: -25%;
+        background-color: #0b0e15;
+        border-radius: 5em 5em 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 130px;
+    }
+    
+    .logocabecera img {
+        width: 115px;
+        height: auto;
+        display: block;
+    }
+
+    .contRedesMenu{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 2em;
+    }
+
+    .itemMenuRedes{
+        padding: 0 1em;
+        font-size: 1.4em;
+    }
+
+    .contItemsMenu{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border: none;
+        margin: 0;
+        border: none;
+    }
+
+    .itemMenu{
+        width: 80%;
+        text-align: center;
+        padding: .5em;
+        border-right: none;
+        border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+    }
+
+    .ultItemMenu{
+        border: none;
+    }
+
+    .contImgCelebraBrad{
+        height:initial;
+    }
+
+    .logoFooter{
+        width: 15vh;
+    }
+
+    .textoFooter{
+        border-left: solid 1px #E4405F;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    
+    .contDescArticulo_Estructura1{
+        padding: 1em 0;
+        width: 90%;
+    }
+    .articulosComida {
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    }
+
+    .articulosComidaSimple{
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    }
+
+    .whaArticulo{
+        padding-right: 10px;
+    }
+
+    .contCelebraBrad{
+        padding: 0;
+        margin: 0;
+        gap:0;
+    }
+    
 }
