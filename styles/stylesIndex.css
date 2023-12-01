@@ -235,6 +235,8 @@ header {
 }
 
 
+
+
 /* // HAMBURGUESAS \\ */
 .sectionCategoria {
     width: 100%;
@@ -242,7 +244,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 15vw;
 }
 
 .contImg_Estructura2 {
@@ -252,10 +254,10 @@ header {
     align-items: end;
     justify-content: start;
     overflow: hidden;
-    margin-bottom: 5vw;
+    margin-bottom: 15vh;
 }
 
-.hamburguesas{
+.hamburguesas {
     background-image: url(./../img/bannerHam.jpeg);
     background-size: cover;
     background-position: center;
@@ -290,7 +292,7 @@ header {
 
 .contImgTextMenu {
     width: 100%;
-    height: auto;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,6 +305,7 @@ header {
 .contImgTextMenu img {
     width: 100%;
     height: auto;
+    display: block;
     border-radius: 1em 1em 0 0;
     object-fit: cover;
 }
@@ -392,6 +395,7 @@ header {
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
 }
+
 
 @-webkit-keyframes jello-horizontal {
     0% {
@@ -494,7 +498,7 @@ header {
 
 /* // Perros \\ */
 
-.perrotes{
+.perrotes {
     background-image: url(./../img/hotdogBanner.png);
     background-size: cover;
     background-position: center;
@@ -503,7 +507,7 @@ header {
 
 /*  // Para babear \\ */
 
-.paraBabear{
+.paraBabear {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -512,7 +516,7 @@ header {
 
 /* // Paparrotas \\ */
 
-.paparrotas{
+.paparrotas {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -521,7 +525,7 @@ header {
 
 /*  //Sandwich\\ */
 
-.sandwich{
+.sandwich {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -530,7 +534,7 @@ header {
 
 /* // ChikenWings \\ */
 
-.chikenWings{
+.chikenWings {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -539,7 +543,7 @@ header {
 
 /* // Parrilla \\ */
 
-.parrilla{
+.parrilla {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -548,7 +552,7 @@ header {
 
 /*  // Bradcitos \\ */
 
-.bradcitos{
+.bradcitos {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
@@ -557,13 +561,14 @@ header {
 
 /* // Bebidas \\ */
 
-.bebidas{
+.bebidas {
     background-image: url(./../img/bebida.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
 }
-.descArt2{
+
+.descArt2 {
     padding: 0 1em;
     font-size: 1em;
     color: #b9b9b9;
@@ -572,14 +577,14 @@ header {
 
 /* // Adicionales \\ */
 
-.adicionales{
+.adicionales {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
 }
 
-.articulosComidaSimple{
+.articulosComidaSimple {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
@@ -596,26 +601,26 @@ header {
 /* // Celebra Con Brad \\ */
 
 
-.celebraConBrad{
+.celebraConBrad {
     background-image: url(./../img/bannerHam.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
 }
 
-.contCelebraBrad{
+.contCelebraBrad {
     background-color: #0b0e15cf;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 2em;
     margin: 0 3em;
-    gap:1em;
+    gap: 1em;
     border-radius: 1em;
 
 }
 
-.contImgCelebraBrad{
+.contImgCelebraBrad {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -626,13 +631,13 @@ header {
     margin-bottom: 1em;
 }
 
-.contImgCelebraBrad img{
+.contImgCelebraBrad img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.tituloCelebraBrad{
+.tituloCelebraBrad {
     font-size: 1.3em;
     font-weight: bold;
     text-align: center;
@@ -641,14 +646,14 @@ header {
     padding: .5em 1em;
 }
 
-.infoCelebraBrad{
+.infoCelebraBrad {
     font-size: .7em;
     color: #b9b9b9;
     padding: .5em 1em;
     margin-bottom: 1em;
 }
 
-.categoriaArticulo{
+.categoriaArticulo {
     font-size: 1.2em;
     font-weight: bold;
     color: #b9b9b9;
@@ -656,7 +661,7 @@ header {
     margin-bottom: 1em;
 }
 
-.btnWhatsappCelebra{
+.btnWhatsappCelebra {
     width: 100%;
     height: 100%;
     display: flex;
@@ -669,14 +674,14 @@ header {
     font-size: 1em;
 }
 
-.contPrecioWhaArticuloCelebra{
+.contPrecioWhaArticuloCelebra {
     background-color: #b9b9b9;
     box-shadow: 0 0 10px #0f131d;
 }
 
 /* - - - - - - FOOTER - - - - - - */
 
-footer{
+footer {
     width: 100%;
     height: 30vh;
     background-color: #0b0e15;
@@ -685,7 +690,7 @@ footer{
     justify-content: center;
 }
 
-.contFooter{
+.contFooter {
     width: 80%;
     margin-left: 2vh;
     display: flex;
@@ -693,7 +698,7 @@ footer{
     justify-content: space-between;
 }
 
-.logoFooter{
+.logoFooter {
     width: 20vh;
     margin-right: 1em;
     display: flex;
@@ -701,13 +706,13 @@ footer{
     justify-content: center;
 }
 
-.logoFooter img{
+.logoFooter img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.textoFooter{
+.textoFooter {
     width: 70%;
     height: 100%;
     display: block;
@@ -718,10 +723,11 @@ footer{
     text-align: end;
 }
 
-.infoFooter{
+.infoFooter {
     color: #b9b9b9;
 }
-.textoFooter p{
+
+.textoFooter p {
     margin-bottom: 1em;
 }
 
@@ -732,16 +738,16 @@ footer{
 
     .navImgLogo,
     .navIcon {
-    display: block;
-    pointer-events: all;
+        display: block;
+        pointer-events: all;
     }
 
-    .header{
+    .header {
         --icon1: scale(1);
         --icon2: scale(0);
     }
 
-    .header:has(.navMenuHorizontal:target){
+    .header:has(.navMenuHorizontal:target) {
         --icon1: scale(0);
         --icon2: scale(1);
 
@@ -749,12 +755,12 @@ footer{
 
     }
 
-    .header:has(.navMenuHorizontal:target) .navIcon{
+    .header:has(.navMenuHorizontal:target) .navIcon {
         background-color: #0b0e15;
         border-radius: 1em 0 0 1em;
     }
 
-    .navMenuHorizontal{
+    .navMenuHorizontal {
         position: fixed;
         width: 80%;
         height: 100%;
@@ -768,11 +774,11 @@ footer{
         transition: clip-path 0.5s ease-in-out;
     }
 
-    .contNavResponsive{
+    .contNavResponsive {
         width: 100%;
         height: 15vh;
         margin: 0 auto;
-    
+
         display: grid;
         grid-template-columns: 90% 10%;
         grid-template-areas: "navImgLogo navIcon";
@@ -782,22 +788,22 @@ footer{
         overflow: hidden;
     }
 
-    .navImgLogo{
+    .navImgLogo {
         width: 100%;
         height: 15vh;
         grid-area: navImgLogo;
         display: flex;
         align-items: center;
         justify-content: center;
-    }   
+    }
 
-    .navImgLogo img{
+    .navImgLogo img {
         width: 70%;
         height: 15vh;
         display: block;
     }
 
-    .navIcon{
+    .navIcon {
 
         display: flex;
         align-items: center;
@@ -810,21 +816,22 @@ footer{
         z-index: 100;
 
         transform: var(--icon1);
-        transition: transform 0.2s ;
-        padding: 5px;        
+        transition: transform 0.2s;
+        padding: 5px;
     }
-    .navIconClose{
-        transform : var(--icon2);
+
+    .navIconClose {
+        transform: var(--icon2);
     }
 
 
-    .navLinks{
+    .navLinks {
         flex-direction: column;
         width: 100%;
         height: 100vh;
     }
 
-    .contImgCabecera{
+    .contImgCabecera {
         position: relative;
         width: 100%;
         height: 150px;
@@ -836,7 +843,7 @@ footer{
         background-position: center;
     }
 
-    .logocabecera{
+    .logocabecera {
         position: absolute;
         bottom: -25%;
         background-color: #0b0e15;
@@ -847,25 +854,25 @@ footer{
         width: 130px;
         height: 130px;
     }
-    
+
     .logocabecera img {
         width: 115px;
         height: auto;
         display: block;
     }
 
-    .contRedesMenu{
+    .contRedesMenu {
         width: 100%;
         flex-direction: row;
         margin-top: 2em;
     }
 
-    .itemMenuRedes{
+    .itemMenuRedes {
         padding: 0 1em;
         font-size: 1.4em;
     }
 
-    .contItemsMenu{
+    .contItemsMenu {
         width: 100%;
         height: 60%;
         display: flex;
@@ -877,7 +884,7 @@ footer{
         border: none;
     }
 
-    .itemMenu{
+    .itemMenu {
         width: 80%;
         text-align: center;
         padding: .5em;
@@ -885,47 +892,108 @@ footer{
         border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
     }
 
-    .ultItemMenu{
+    .ultItemMenu {
         border: none;
     }
 
-    .contImgCelebraBrad{
-        height:initial;
+    .contImgCelebraBrad {
+        height: initial;
     }
 
-    .logoFooter{
+    .logoFooter {
         width: 15vh;
     }
 
-    .textoFooter{
+    .textoFooter {
         border-left: solid 1px #E4405F;
     }
 
 }
 
 @media screen and (max-width: 490px) {
-    
-    .contDescArticulo_Estructura1{
+
+    .contDescArticulo_Estructura1 {
         padding: 1em 0;
         width: 90%;
     }
+
     .articulosComida {
         padding: 0;
         grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
     }
 
-    .articulosComidaSimple{
+    .articulosComidaSimple {
         grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
     }
 
-    .whaArticulo{
+    .whaArticulo {
         padding-right: 10px;
     }
 
-    .contCelebraBrad{
+    .contCelebraBrad {
         padding: 0;
         margin: 0;
-        gap:0;
+        gap: 0;
     }
-    
+
+    .articuloMenu_Estructura1 {
+        border-radius: 0;
+    }
+
+    .contImgTextMenu {
+        border-radius: 0;
+    }
+
+    .contImgTextMenu img {
+        border-radius: 0;
+    }
+
 }
+
+.pulsate-fwd  i:hover{
+        -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+        background-color: #E73047;
+        transition: background-color 0.5s;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-12-1 10:24:20
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
