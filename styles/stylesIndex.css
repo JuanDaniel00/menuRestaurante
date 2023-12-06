@@ -276,7 +276,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     gap: 2em;
-    padding: 3em;
+    padding: 0 6em;
 }
 
 
@@ -292,7 +292,7 @@ header {
 
 .contImgTextMenu {
     width: 100%;
-    height: 30vh;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,6 +307,7 @@ header {
     height: 100%;
     display: block;
     border-radius: 1em 1em 0 0;
+    object-fit: cover;
 }
 
 .nombreArticulo_Estructura1 {
@@ -322,6 +323,7 @@ header {
 }
 
 .contDescArticulo_Estructura1 {
+    height: calc(100% - 300px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -353,7 +355,6 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: 60px;
-    margin-bottom: 2em;
     border-radius: 1em;
     box-shadow: 0 0 10px #c9c9c9;
 }
@@ -369,7 +370,7 @@ header {
     width: 2px;
     background-color: #fb6262;
     height: 60%;
-    margin: 0 10px;
+    margin: 0 1vw;
 }
 
 .whaArticulo {
@@ -732,12 +733,22 @@ footer {
 
 
 /* - - - REPONSIVE - - - */
+@media screen and (max-width: 902px) {
+    .contImgTextMenu {
+        height: 450px;
+    }
+}
 
 @media screen and (max-width: 807px) {
     
-.contImgTextMenu {
-    height: 50vh;
-}
+    .contImgTextMenu {
+        height: 60vh;
+    }
+
+    .articulosComida {
+        padding: 0 2em;
+    }
+
 }
 
 @media screen and (max-width: 587px) {
@@ -924,7 +935,7 @@ footer {
     }
 
     .articulosComida {
-        padding: 0;
+        padding: 1.5em;
         grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
     }
 
@@ -935,24 +946,31 @@ footer {
     .whaArticulo {
         padding-right: 10px;
     }
-
-    .contCelebraBrad {
-        padding: 0;
-        margin: 0;
-        gap: 0;
-    }
-
-    .articuloMenu_Estructura1 {
-        border-radius: 0;
-    }
-
     .contImgTextMenu {
-        border-radius: 0;
+        height: 35vh;
     }
 
-    .contImgTextMenu img {
-        border-radius: 0;
+    .divisorWhats{
+        display: none;
     }
+
+    .precioArticulo{
+        margin-right: 1em;
+    }
+
+    .contPrecioWhaArticulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1em 0;
+        margin-bottom: 2em;
+        border-radius: 1em;
+        box-shadow: 0 0 10px #c9c9c9;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
 
 }
 
